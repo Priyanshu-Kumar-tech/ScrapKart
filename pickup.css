@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #143854;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 56, 84, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(179, 204, 110, 1) 100%
+  );
+}
+
+.container {
+  height: 535px;
+  width: 1000px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  justify-content: center;
+  margin-left: 145px;
+  margin-top: 12px;
+}
+
+.pickup {
+  display: block;
+  background-color: #fff;
+  color:black;
+  padding: 26px 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #143854;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 56, 84, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(179, 204, 110, 1) 100%
+  );
+}
+
+.name {
+  width: 45%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #f8f8f8;
+  font-size: 14px;
+  display: block;
+  margin: auto;
+  /* position: relative;
+  top: 50px; */
+  margin-top: 20px;
+}
+.time-slots {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.slot-btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 2px solid #143854;
+  background: #f8f8f8;
+  color: #143854;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.slot-btn:hover,
+.slot-btn.selected {
+  background: linear-gradient(90deg, #57c785 0%, #b3cc6e 100%);
+  color: #fff;
+  border-color: #57c785;
+}
+
+.choicebox {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.choices {
+  background: #f8f8f8;
+  height: 80px;
+  border: 2px solid #143854;
+  color: #143854;
+  border-radius: 20px;
+  width: 15%;
+  cursor: pointer;
+  display: block;
+  /* Remove default button styles */
+  font: inherit;
+  outline: none;
+  box-shadow: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  /* Remove inner border and background for button */
+  border-width: 2px;
+  border-style: solid;
+}
+
+.choices:hover{
+  background: linear-gradient(90deg, #57c785 0%, #b3cc6e 100%);
+  color: #fff;
+  border-color: #57c785;
+}
+
+/* .choices:focus{
+  background: linear-gradient(90deg, #57c785 0%, #b3cc6e 100%);
+  color: #fff;
+  border-color: #57c785;
+} */
+
+.text {
+  font-size: 18px;
+  margin: 9px 50px;
+}
+.fa-solid {
+  display: block;
+  font-size: 24px;
+  margin-top: 15px;
+  
+}
+
+.cardb {
+  font-size: 18px;
+  margin: 9px 35px;
+}
+
+.elect {
+  font-size: 18px;
+  margin: 9px 35px;
+}
+
+
+

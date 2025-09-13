@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&family=Story+Script&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+        background: #143854;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 56, 84, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(179, 204, 110, 1) 100%
+  );
+        }
+
+        #heading {
+            width: 300px;
+            height: 40px;
+            color: #F2E538;
+            margin-left: 520px;
+            margin-top: 30px;
+            margin-bottom: 25px;
+            padding: 5px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .name {
+
+            display: inline-block;
+            width: 300px;
+            height: 8px;
+            color: #F2E538;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 448px;
+        }
+
+        .num {
+
+            display: inline-block;
+            color: #F2E538;
+            width: 130px;
+            height: 12px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 448px;
+
+        }
+
+        #MyNum {
+            /* display: inline-block; */
+            width: 450px;
+            height: 28px;
+            border: 2px solid black;
+            border-radius: 4px;
+
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            padding-left: 5px;
+            padding-top: 4px;
+            font-size: 17px;
+            margin-left: 450px;
+            margin-top: 1px;
+        }
+
+        #MyName {
+
+            width: 450px;
+            height: 28px;
+            border: 2px solid black;
+            border-radius: 4px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            /* font-weight: bold; */
+            margin-left: 450px;
+            margin-top: 1px;
+            padding-left: 5px;
+            padding-top: 4px;
+            font-size: 17px;
+        }
+
+        #MyAdd {
+
+            width: 450px;
+            height: 28px;
+            border: 2px solid black;
+            border-radius: 4px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            /* font-weight: bold; */
+            margin-left: 450px;
+            margin-top: 1px;
+            padding-left: 5px;
+            padding-top: 4px;
+            font-size: 17px;
+        }
+
+        .address {
+
+            display: inline-block;
+            color: #F2E538;
+            width: 120px;
+            height: 12px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 448px;
+        }
+
+        .dob {
+
+            display: inline-block;
+            color: #F2E538;
+            width: 130px;
+            height: 12px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 448px;
+
+        }
+
+        #Mydob {
+            width: 450px;
+            height: 28px;
+            border: 2px solid black;
+            border-radius: 4px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            /* font-weight: bold; */
+            margin-left: 450px;
+            margin-top: 1px;
+            padding-left: 5px;
+            padding-top: 4px;
+            font-size: 17px;
+        }
+
+        .check {
+            display: inline-block;
+            color: #F2E538;
+            width: 200px;
+            height: 19px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 450px;
+
+        }
+
+        #MyCheck {
+
+            width: 30px;
+            height: 20px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            /* font-weight: bold; */
+            margin-left: 10px;
+            margin-top: 5px;
+            padding-left: 5px;
+            padding-top: 4px;
+            font-size: 17px;
+        }
+
+        .radio {
+            display: inline-block;
+            color: #F2E538;
+            width: 200px;
+            height: 19px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 450px;
+        }
+
+        .MyRadio {
+
+            width: 450px;
+            height: 20px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-weight: bold;
+            padding-left: 5px;
+            padding-top: 4px;
+            font-size: 17px;
+        }
+
+        .parentsnum {
+            display: inline-block;
+            color: #F2E538;
+            width: 250px;
+            height: 12px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 448px;
+        }
+
+        #MyParentsNum {
+            width: 450px;
+            height: 28px;
+            border: 2px solid black;
+            border-radius: 4px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            /* font-weight: bold; */
+            margin-left: 450px;
+            margin-top: 1px;
+            padding-left: 5px;
+            padding-top: 4px;
+            font-size: 17px;
+        }
+
+        #MyTextArea {
+            width: 450px;
+            height: 28px;
+            border: 2px solid black;
+            border-radius: 4px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            /* font-weight: bold; */
+            margin-left: 450px;
+            margin-top: 1px;
+            padding-left: 5px;
+            padding-top: 4px;
+            font-size: 17px;
+        }
+
+        .textarea {
+
+            display: inline-block;
+            color: #F2E538;
+            width: 420px;
+            height: 12px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 450px;
+        }
+
+        .url {
+            display: inline-block;
+            color: #F2E538;
+            width: 150px;
+            height: 12px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-weight: bold;
+            margin-left: 448px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        #MyURL {
+
+            width: 450px;
+            height: 28px;
+            border: 2px solid black;
+            border-radius: 4px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            /* font-weight: bold; */
+            margin-left: 450px;
+            margin-top: 1px;
+            padding-left: 5px;
+            padding-top: 4px;
+            font-size: 17px;
+        }
+
+        .hobby {
+
+
+            display: inline-block;
+            color: #F2E538;
+            width: 200px;
+            height: 12px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-weight: bold;
+            margin-left: 450px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        .val {
+
+            width: 455px;
+            height: 30px;
+            border: 2px solid black;
+            border-radius: 4px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin-left: 450px;
+            margin-top: 1px;
+            padding-left: 5px;
+            padding-top: 4px;
+            font-size: 17px;
+
+        }
+
+        #reset {
+            display: inline-block;
+            width: 170px;
+            height: 40px;
+            border-radius: 20px;
+            margin-left: 390px;
+            padding: 5px;
+            margin-bottom: 50px;
+            border: 2px solid black;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        #submit {
+            display: inline-block;
+            width: 170px;
+            height: 40px;
+            border-radius: 20px;
+            margin-left: 250px;
+            padding: 5px;
+            padding: 5px;
+            margin-bottom: 50px;
+            border: 2px solid black;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        #MyName :hover {
+            background-color: rgb(255, 0, 0);
+            color: red;
+        }
+
+        #MyName:focus {
+            background-color: #e0ffff;
+            outline: none;
+            box-shadow: 0 0 8px #00ffff;
+        }
+
+        #MyNum:focus {
+            background-color: #e0ffff;
+            outline: none;
+            box-shadow: 0 0 8px #00ffff;
+        }
+
+        #MyAdd:focus {
+            background-color: #e0ffff;
+            outline: none;
+            box-shadow: 0 0 8px #00ffff;
+        }
+
+        #Mydob:focus {
+            background-color: #e0ffff;
+            outline: none;
+            box-shadow: 0 0 8px #00ffff;
+        }
+
+        #MyParentsNum:focus {
+            background-color: #e0ffff;
+            outline: none;
+            box-shadow: 0 0 8px #00ffff;
+        }
+
+        #MyTextArea:focus {
+            background-color: #e0ffff;
+            outline: none;
+            box-shadow: 0 0 8px #00ffff;
+        }
+
+        #MyURL:focus {
+            background-color: #e0ffff;
+            outline: none;
+            box-shadow: 0 0 8px #00ffff;
+        }
+
+        .val:focus {
+            background-color: #e0ffff;
+            outline: none;
+            box-shadow: 0 0 8px #00ffff;
+        }
+
+        #reset:hover {
+            background-color: #333333;
+            color: white;
+            border-color: #111111;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background-color: #333333;
+            color: white;
+            border-color: #111111;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id=heading title="heading of the page">
+        <h2><strong><u>Job Application Form
+                </u></strong></h2>
+    </div>
+    <br>
+    <form action="index.js">
+        <div class="box">
+
+            <label for="MyName"><span class="name">Name of the Applicant</span> </label>
+            <input type="text" name="Myname" id="MyName"></input>
+            <br>
+            <br>
+            <label for="MyNum"><span class="num">Mobile Number</span></label>
+            <input type="number" name="MyNumber" id="MyNum"></input>
+            <br>
+            <br>
+            <label for="MyAdd"><span class="address">Address</span></label>
+            <input type="text" name="MyAddress" id="MyAdd"></input>
+            <br>
+            <br>
+            <label for="Mydob"><span class="dob">Date of Birth</span></label>
+            <input type="date" name="MyDOB" id="Mydob"></input>
+            <br>
+            <br>
+            <label for="MyCheck"><span class="check">Are You over 18 Years of age</span></label>
+            <input type="checkbox" name="MyCheckbox" id="MyCheck" checked></input>
+            <br>
+            <br>
+            <span class="radio">What's your Speciliasation in ?</span><label for="MyRad"> </label>
+            <br>
+            <span class="radio">Technical</span><input type="radio" class="MyRadio" id="MyRad" name="Rad"></input>
+            <span class="radio">Management</span><input type="radio" class="MyRadio" name="Rad"></input>
+            <span class="radio">Event</span><input type="radio" class="MyRadio" name="Rad"></input>
+            <br>
+            <br>
+
+            <label for="MyParentsNum"><span class="parentsnum">Parent's Mobile Number</span></label>
+            <input type="number" name="MyParentsNumber" id="MyParentsNum"></input>
+            <br>
+            <br>
+            <span class="textarea">Give a Description about yourself in 100 words</span><textarea rows="10" cols="50"
+                id="MyTextArea"></textarea>
+            <br>
+            <br>
+            <label for="MyURL"><span class="url">LinedIn URL</span></label>
+            <input type="url" name="MyUrl" id="MyURL">
+            <br>
+            <br>
+            <span class="hobby">Your Favorate Hobby</span><select name="FavHobby" class="val">
+                <option value="Coding" class="val" selected>Coding</option>
+                <option value="Badminton" class="val">Badminton</option>
+                <option value="Fitness; Gym" class="val">Fitness; Gym</option>
+                <option value="Novel Reading" class="val">Novel Reading</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="reset" id="reset">
+            <input type="submit" id="submit">
+        </div>
+    </form>
+</body>
+
+</html>

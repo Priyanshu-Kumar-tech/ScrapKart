@@ -1,0 +1,32 @@
+body {
+  background: #143854;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 56, 84, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(179, 204, 110, 1) 100%
+  );
+}
+
+.const{
+position: relative;
+top:215px;
+  display: block;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+   background: rgba(255, 255, 255, 0.4);
+   box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+   cursor:pointer;
+   font-size:24px;
+   transition:all 0.3s ease;
+}
+
+.const:hover {
+ transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}

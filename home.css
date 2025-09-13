@@ -1,0 +1,614 @@
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+body {
+  height: 2000px;
+  margin: 0px;
+  padding: 0px;
+  background: #143854;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 56, 84, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(179, 204, 110, 1) 100%
+  );
+  overflow-x: hidden;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* .left {
+  display: block;
+  position: absolute;
+  top: -7px;
+  left: 2px;
+  background: url(C:/Users/shukl/OneDrive/Documents/ScrapKart/logo.png);
+} */
+/* .left img {
+  height: 100%;
+  width: 80px;
+  filter: brightness(1.8);
+  filter: drop-shadow(100);
+  background-position: 2px 2px;
+} */
+
+.mid {
+  display: block;
+  width: 35.5%;
+  margin: 12px auto;
+}
+
+header {
+  position: relative;
+  z-index: 1001;
+  width: 100%;
+  background: transparent;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+  z-index: 1002;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: static;
+  background: none;
+}
+
+.left img {
+  height: 56px;
+  width: auto;
+  filter: brightness(1.8);
+  margin-right: 12px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar li a {
+  display: block;
+  padding: 14px 24px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.navbar li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.login a {
+  display: block;
+  padding: 14px 24px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 15px;
+  /* background: linear-gradient(90deg, #0f2027, #203a43, #2c5364); */
+  /* border: 2px solid black; */
+  transition: all 0.3s ease;
+}
+
+.login a:hover {
+  /* background: rgba(255, 255, 255, 0.2);
+  border-color: #57c785;
+  transform: translateY(-2px); */
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+
+
+.login {
+  position: relative;
+}
+
+.login .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #203a43;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  min-width: 160px;
+  padding: 16px 0;
+  z-index: 1003;
+}
+
+.login:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login .dropdown li {
+  list-style: none;
+  width: 100%;
+  text-align: left;
+}
+
+.login .dropdown li a {
+  display: block;
+  padding: 10px 24px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.login .dropdown li a:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* .navbar li.login a {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  border: 2px solid black;
+  color: white;
+  font-weight: 600;
+}
+
+.navbar li.login a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #57c785;
+} */
+
+
+
+/* .right {
+  display: flex;
+  align-items: center;
+  position: static;
+} */
+
+/* .btnlogin {
+  box-sizing: border-box;
+  border: 2px solid black;
+  width: 140px;
+  border-radius: 30px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+} */
+
+/* .btnlogin a {
+  display: inline-block;
+  padding: 10px 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+} */
+
+/* .btnlogin a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+} */
+
+
+
+/* ul.dropdown li {
+  position: absolute;
+  top: 50px;
+  right: 45px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #222;
+  z-index: 999;
+  display: block; 
+}
+
+.dropdown li a {
+  display: block;  
+  padding: 10px 20px;
+  border-bottom: 1px solid #444;
+  text-decoration: none;
+  text-align: left;
+  color: #ffffff;
+}
+
+.dropdown li a:hover {
+  background: #57c785;
+}
+
+.btnlogin:hover .dropdown li a {
+  display: block;
+} */
+
+/* ...existing code... */
+
+.conatiner1 {
+  box-sizing: border-box;
+  height: 400px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  overflow-x: auto;
+  padding: 40px 32px;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  scrollbar-width: none;
+  scrollbar-color: #143854 #fff;
+}
+
+/* Remove absolute positioning from card1 and card3 */
+.card1,
+.card2,
+.card3,
+.card4 {
+  flex: 0 0 auto;
+  height: 360px;
+  width: 310px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  position: relative; /* Remove absolute */
+  top: 0; /* Remove top */
+  left: 0; /* Remove left/right */
+  box-sizing: border-box;
+}
+
+/* ...existing code... */
+
+
+/* .conatiner1 {
+  box-sizing: border-box;
+  height: 800px;
+  width: 1270px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 120px;
+ 
+  display: block;
+}
+
+.card1 {
+  color: #ffffff;
+  height: 360px;
+  width: 310px;
+  display: inline-block;
+  position: absolute;
+  left: 80px;
+  top: 190px;
+  background-repeat: no-repeat;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px); 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border-radius: 20px;
+} */
+
+.card1:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card1 .btnreq {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: #333;
+  margin: 0px 14px;
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 282px;
+  padding: 18px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+
+.card1 .btnreq:hover {
+  background: linear-gradient(135deg, #0077b6, #023e8a);
+  transform: translateY(-5px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.card1 .btnreq a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+.card1 img {
+  width: 300px;
+  max-height: 300px;
+  display: block;
+}
+
+/* .card2 {
+  color: #ffffff;
+  height: 360px;
+  width: 310px;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  box-sizing: border-box;
+} */
+
+.card2:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card2 img {
+  max-height: 330px;
+  width: 301px;
+  display: block;
+}
+
+.card2 .btnreq {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: #333;
+  margin: 18px 14px;
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 282px;
+  padding: 18px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+
+.card2 .btnreq a {
+  color: black;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.card2 .btnreq:hover {
+  background: linear-gradient(135deg, #0077b6, #023e8a);
+  transform: translateY(-5px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* .card3 {
+  color: #ffffff;
+  height: 360px;
+  width: 310px;
+  display: inline-block;
+  position: absolute;
+  top: 190px;
+  right: 80px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  box-sizing: border-box;
+} */
+
+.card3:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card3 img {
+  height: 313px;
+  width: 315px;
+  display: block;
+  margin-top: -30px;
+  background-repeat: no-repeat;
+}
+
+.card3 .btnreq {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: #333;
+  margin: 17px 14px;
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 282px;
+  padding: 18px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+
+.card3 .btnreq a {
+  text-decoration: none;
+  color: black;
+}
+
+.card3 .btnreq:hover {
+  background: linear-gradient(135deg, #0077b6, #023e8a);
+  transform: translateY(-5px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* .card4 {
+  color: #ffffff;
+  height: 360px;
+  width: 310px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  background-repeat: no-repeat;
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px); 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  box-sizing: border-box;
+} */
+
+.card4:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card4 img {
+  max-height: 330px;
+  width: 301px;
+  display: block;
+}
+
+.card4 .btnreq {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: #333;
+  margin: 13px 14px;
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 282px;
+  padding: 18px;
+  cursor: pointer;
+  transition: all 0.45s ease;
+}
+
+.card4 .btnreq a {
+  text-decoration: none;
+  color: black;
+}
+
+.card4 .btnreq:hover {
+  background: linear-gradient(135deg, #0077b6, #023e8a);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.first {
+  display: block;
+  width: 60%;
+  margin: auto;
+  color: white;
+  /* border: 2px solid red; */
+  text-align: center;
+  margin-top: 80px;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.second {
+  display: block;
+  width: 30%;
+  margin: auto;
+  color: rgb(187 247 208 / var(--tw-text-opacity, 1));
+  /* border: 2px solid red; */
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.third {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 2px solid red;
+  border: none;
+  color: white;
+  text-align: center;
+  font-weight: 1000;
+  position: relative;
+  top: 60px;
+  width: 20%;
+  font-size: 60px;
+  /* margin: 0px 20px; */
+  margin-left: 50px;
+  height: 60px;
+}
+
+.fourth {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 2px solid red;
+  border: none;
+  color: rgb(187 247 208 / var(--tw-text-opacity, 1));
+  text-align: center;
+  font-weight: 100;
+  position: relative;
+  top: 80px;
+  width: 20%;
+  font-size: 18px;
+  /* margin: 0px 20px; */
+  margin-left: 50px;
+  height: 60px;
+}
+
+.fifth {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 2px solid red;
+  border: none;
+  color: rgb(187 247 208 / var(--tw-text-opacity, 1));
+  text-align: center;
+  font-weight: 100;
+  position: relative;
+  top: 50px;
+  width: 20%;
+  font-size: 15px;
+  /* margin: 0px 20px; */
+  margin-left: 50px;
+  height: 60px;
+}
