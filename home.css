@@ -612,3 +612,123 @@ header {
   margin-left: 50px;
   height: 60px;
 }
+
+/* ...existing code... */
+
+/* Responsive Navbar */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 12px 8px;
+  }
+  .navbar ul {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .navbar li a, .login a {
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+  .left img {
+    height: 40px;
+    margin-right: 8px;
+  }
+}
+
+/* Responsive Cards Container */
+@media (max-width: 1200px) {
+  .conatiner1 {
+    width: 100%;
+    padding: 24px 8px;
+    gap: 16px;
+  }
+  .card1, .card2, .card3, .card4 {
+    width: 220px;
+    height: 260px;
+  }
+  .card1 img, .card2 img, .card3 img, .card4 img {
+    width: 200px;
+    max-height: 180px;
+  }
+  .card1 .btnreq, .card2 .btnreq, .card3 .btnreq, .card4 .btnreq {
+    width: 180px;
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+
+/* Stack cards vertically on small screens */
+@media (max-width: 700px) {
+  .conatiner1 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 24px;
+  }
+  .card1, .card2, .card3, .card4 {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 16px;
+  }
+  .card1 img, .card2 img, .card3 img, .card4 img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+  .card1 .btnreq, .card2 .btnreq, .card3 .btnreq, .card4 .btnreq {
+    width: 90%;
+    min-width: 120px;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Responsive Impact Figures */
+@media (max-width: 900px) {
+  .impact.figures .third,
+  .impact.figures .fourth,
+  .impact.figures .fifth {
+    width: 45vw;
+    margin-left: 10px;
+    font-size: 28px;
+    height: auto;
+    top: 20px;
+  }
+  .first, .second {
+    width: 90vw;
+    font-size: 32px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 500px) {
+  .navbar {
+    padding: 6px 2px;
+  }
+  .left img {
+    height: 28px;
+  }
+  .card1, .card2, .card3, .card4 {
+    max-width: 98vw;
+  }
+  .first {
+    font-size: 22px;
+  }
+  .second {
+    font-size: 14px;
+  }
+  .impact.figures .third,
+  .impact.figures .fourth,
+  .impact.figures .fifth {
+    font-size: 16px;
+    width: 90vw;
+    margin-left: 2px;
+    top: 8px;
+  }
+}
+
+/* ...existing code... */
