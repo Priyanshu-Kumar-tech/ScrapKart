@@ -135,8 +135,8 @@
     <h2>Create an Account</h2>
     <p>Fill in your details to sign up</p>
 
-    <form>
-      <input type="text" class="input-field" placeholder="Full Name" required>
+    <form id="formdata">
+      <input id="name" type="text" class="input-field" placeholder="Full Name" required>
       
       <select class="input-field" required>
         <option value="" disabled selected>Select Gender</option>
@@ -166,4 +166,5 @@
   </div>
 
 </body>
+<script src="usersignup.js"></script>
 </html>
